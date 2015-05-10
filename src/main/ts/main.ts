@@ -60,8 +60,6 @@ if (packagesToInstall.length > 0) {
     pkg => {npmArgs.push(pkg)}
   );
 
-  log(npmArgs.toString());
-
   runNPM(npmArgs)
 }
 
@@ -69,14 +67,16 @@ runNode(nodeArgs);
 
 function runNPM(npmArgs:string[]) {
 
-  child_process.execFileSync("npm", npmArgs, {stdio: [0,0,0]});
+  child_process.execFileSync("npm", npmArgs, {
+    stdio: [process.stdin, 'ignore', process.stderr]
+  });
 
 }
 
 function runNode(nodeArgs:string[]) {
 
   child_process.execFileSync("node", nodeArgs, {
-    stdio: [0,0,0]
+    stdio: [process.stdin, process.stdout, process.stderr]
   });
 }
 
