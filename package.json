@@ -1,0 +1,25 @@
+{
+  "name": "nodenpm",
+  "version": "0.0.2",
+  "description": "A utility to automatically download nodejs depencecies when specified in a script ",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PerArneng/nodenpm.git"
+  },
+  "keywords": [
+    "npm",
+    "dependencies"
+  ],
+  "author": "Per Arneng <per.arneng@anyplanet.com> (http://www.github.com/PerArneng)",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/PerArneng/nodenpm/issues"
+  },
+  "bin": {
+    "nodenpm": "index.js"
+  }
+}
