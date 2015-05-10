@@ -11,9 +11,9 @@ it without having to care about any dependencies.
 
 # Scope of this tool
 
-This is a prototype of functionality that i wouls like to see built in to ```node```. It is
+This is a prototype of functionality that i would like to see built in to ```node```. It is
 inspired by the Groovy languages [grape](http://docs.groovy-lang.org/latest/html/documentation/grape.html) functionality.
-I do not aim to develop this tool further than this so its up to someone else to continue or do
+I do not aim to develop this tool further than this. So its up to someone else to continue or do
 a proper integration in to ```node``` or as an option for the ```npm``` tool.
 
 # Overview
@@ -28,7 +28,7 @@ that are specified in the ```.js``` file.
 
 The package format follows the ```npm``` commandline package naming format. Multiple packages can
 be specified with spaces inbetween and they are sent to the ```npm``` tool before node is called. It is also
-possible to have multiple ```//npm:``` lines in your script. The packags are installed
+possible to have multiple ```//npm:``` lines in your script. The packages are installed
 in the users home directory ```$HOME/.nodenpm/node_modules```.
 
 When the packages are installed all commandline arguments are passed on to the node commandline utility.
@@ -53,10 +53,12 @@ $ sudo npm install nodenpm -g
 ```
 $ nodenpm mynodescript.js
 ```
-The commandline arguments are passed through to node as they are.
+The commandline arguments are passed through to node unmodified.
 
 # NOTES
 *NOTE!: This is a prototype*
+
+*NOTE!: Tested on OSX and Linux*
 
 *NOTE!: Tested on node v0.12.2 . Does not work on v0.10.x*
 
