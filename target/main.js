@@ -1,11 +1,7 @@
 /// <reference path='../../../typings/node/node.d.ts' />
-// A prototype utility that parses npm package names from a js file
-// and then installs them at $HOME/.nodenpm/node_modules and includes
-// them when node is executed with the given parameters.
-// Author: Per Arneng
 var child_process = require("child_process");
 var fs = require('fs');
-var version = "0.1.0";
+var version = "0.1.1";
 var nodeArgs = process.argv.slice(2);
 var jsFile;
 var moduleDir = getUserHome() + "/.nodenpm";

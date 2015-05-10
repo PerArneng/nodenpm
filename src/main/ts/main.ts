@@ -3,12 +3,12 @@
 // A prototype utility that parses npm package names from a js file
 // and then installs them at $HOME/.nodenpm/node_modules and includes
 // them when node is executed with the given parameters.
-// Author: Per Arneng
+// Author: Per Arneng 2015
 
 import child_process  = require("child_process");
 import fs = require('fs');
 
-var version:string = "0.1.0";
+var version:string = "0.1.1";
 var nodeArgs:string[] = process.argv.slice(2);
 var jsFile:string;
 var moduleDir = getUserHome() + "/.nodenpm";
