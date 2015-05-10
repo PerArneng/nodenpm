@@ -14,6 +14,7 @@ in the users home directory ```$HOME/.nodenpm/node_modules```.
 
 When the packages are installed all commandline arguments are passed on to the node commandline utility.
 
+**Example:**
 ```javascript
 #!/usr/bin/env nodenpm
 
