@@ -1,5 +1,5 @@
 # nodenpm
-A ``node``` wrapper that downloads dependencies specified in the supplied script. It looks in
+A ```node``` wrapper that downloads dependencies specified in the supplied script. It looks in
 command line args for a ```.js``` file. It parses the ```.js``` file and tries to collect all packages
 that are specified in the ```.js``` file.
 
