@@ -1,7 +1,7 @@
 /// <reference path='../../../typings/node/node.d.ts' />
 var child_process = require("child_process");
 var fs = require('fs');
-var version = "0.1.2";
+var version = "0.1.3";
 var nodeArgs = process.argv.slice(2);
 var jsFile;
 var moduleDir = getUserHome() + "/.nodenpm";

@@ -8,7 +8,7 @@
 import child_process  = require("child_process");
 import fs = require('fs');
 
-var version:string = "0.1.2";
+var version:string = "0.1.3";
 var nodeArgs:string[] = process.argv.slice(2);
 var jsFile:string;
 var moduleDir = getUserHome() + "/.nodenpm";
