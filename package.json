@@ -1,6 +1,6 @@
 {
   "name": "nodenpm",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A utility to automatically download npm dependencies that are specified in a nodejs script before it is exceuted",
   "main": "index.js",
   "scripts": {
