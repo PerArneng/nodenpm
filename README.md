@@ -13,3 +13,12 @@ possible to have multiple ```//npm:``` lines in your script. The packags are ins
 in the users home directory ```$HOME/.nodenpm/node_modules```.
 
 When the packages are installed all commandline arguments are passed on to the node commandline utility.
+
+```javascript
+#!/usr/bin/env nodenpm
+
+//npm: colors@1.1.0
+
+var colors = require('colors');
+console.log("Hello, World!".green);
+```
