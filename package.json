@@ -1,6 +1,6 @@
 {
   "name": "nodenpm",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A utility to automatically download nodejs depencecies when specified in a script ",
   "main": "index.js",
   "scripts": {
