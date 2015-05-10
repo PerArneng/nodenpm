@@ -1,7 +1,10 @@
 # nodenpm
+
 A ```node``` wrapper that downloads dependencies specified in the supplied script. It looks in
 command line args for a ```.js``` file. It parses the ```.js``` file and tries to collect all packages
 that are specified in the ```.js``` file.
+
+*NOTE!:This is a prototype*
 
 ```
 //npm: colors@0.1.0
@@ -23,3 +26,15 @@ When the packages are installed all commandline arguments are passed on to the n
 var colors = require('colors');
 console.log("Hello, World!".green);
 ```
+
+# Installing
+For global install
+```
+$ sudo npm install nodenpm -g
+```
+
+# Running
+```
+$ nodenpm mynodescript.js
+```
+The commandline arguments are passed through to node as they are.
